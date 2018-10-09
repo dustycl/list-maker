@@ -21,13 +21,16 @@ def remove_item():
     user_list.remove(user_item)
 
 
+def print_menu():
+    print('a: add item')
+    print('p: print list')
+    print('r: remove item')
+    print('q: quit')
+    user_choice = input('Select a menu option: ')
+
 # User Menu Loop
 
-print('a: add item')
-print('p: print list')
-print('r: remove item')
-print('q: quit')
-user_choice = input('Select a menu option: ')
+print_menu()
 
 while user_choice != 'q':
     if user_choice == 'a':
@@ -37,8 +40,4 @@ while user_choice != 'q':
     elif user_choice == 'r':
         remove_item()
     
-    print('a: add item')
-    print('p: print list')
-    print('r: remove item')
-    print('q: quit')
-    user_choice = input('Select a menu option: ')
+    print_menu():
