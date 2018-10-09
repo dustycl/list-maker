@@ -26,11 +26,12 @@ def print_menu():
     print('p: print list')
     print('r: remove item')
     print('q: quit')
-    user_choice = input('Select a menu option: ')
+
 
 # User Menu Loop
 
 print_menu()
+user_choice = input('Select a menu option: ')
 
 while user_choice != 'q':
     if user_choice == 'a':
@@ -40,4 +41,5 @@ while user_choice != 'q':
     elif user_choice == 'r':
         remove_item()
     
-    print_menu():
+    print_menu()
+    user_choice = input('Select a menu option: ')
